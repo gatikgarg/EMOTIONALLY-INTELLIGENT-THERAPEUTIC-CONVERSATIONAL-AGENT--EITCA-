@@ -1,21 +1,37 @@
-# PANDORA - THERAPEUTIC AI ASSISTANT
-Classic therapy scenes in Hollywood films show a distraught client reclining on a colourful Victorian sofa and recounting their troubles. The psychotherapist ponders in a leather chair, while the client’s concerns are revealed to be tied to some early experiences. Most therapy in the real world hasn’t looked like this in ages. However, these scenes get one thing right: the therapist in the room is **human**. <br>
+### Detailed Description of the EIMTCA Project
 
-Today, as the need for mental health services continues to surpass availability, people in distress can reach out online to mental health “chatbots.” In some instances, the responses are based on artificial intelligence (AI). In others, there’s a human element.
+The **Emotionally Intelligent Multi-Modal Therapeutic Conversational Agent (EIMTCA)** was developed to provide personalized mental health support through a conversational AI platform. The project integrates various technologies like deep learning, NLP, and emotion recognition to offer a more empathetic and effective user experience, especially for mental health concerns.
 
-But the question remains: Is it possible to automate the expertise needed to become an effective therapist, using sophisticated algorithms and programming, when humans spend a lifetime trying to master these skills?
+#### Development Process:
+1. **Project Planning & Design:**
+   - The project started with designing a user-friendly conversational flow aimed at providing mental health support. I researched existing mental health chatbots and therapies like **Cognitive Behavioral Therapy (CBT)**, to ensure the chatbot would offer scientifically backed suggestions.
+   - The overall architecture of the system was designed to handle both text and speech inputs for diverse user needs, integrating **emotion recognition** to gauge the emotional state of the user.
 
-# CHATBOTS
-Chatbots are systems that can carry on extended conversations with the goal of mimicking the unstructured conversations or ‘chats’ characteristic of informal human-human interaction.
+2. **Data Collection & Preprocessing:**
+   - A custom dataset was collected to train the NLP models, and user conversations were analyzed to build conversational intent models.
+   - Text preprocessing techniques, such as tokenization, lemmatization, and intent classification, were applied using **TensorFlow**, **Keras**, and **NLTK** for better understanding and handling of user inputs.
 
-![eliza](https://user-images.githubusercontent.com/92647313/161245945-2314570e-6c7a-4ab2-98aa-98129529c669.png) <br>
-Starting from the very first system, **ELIZA**, chatbots have also been used for practical purposes like testing theories of psychological counseling. ELIZA was designed to simulate a Rogerian psychologist, based on a branch of clinical psychology whose methods involve drawing the patient out by reflecting the patient's statements back at them.
+3. **Model Training:**
+   - I developed a **deep learning-based classification model** using **Keras** to classify user intents and generate meaningful responses. This model was trained using a variety of text-based data.
+   - The **tokenizer** was created and integrated to process user input and convert it into sequences of tokens that could be fed into the neural network for classification.
 
-# PANDORA
-**Pandora** is a conversational agent designed to mimic a psychotherapist in order to provide emotional support to people with anxiety & depression.
-At its core, Pandora is a chatbot trained on a text dataset using Deep Learning and Natural Language Processing techniques. 
+4. **Emotion Recognition Integration:**
+   - **Emotion recognition** was integrated into the system using machine learning techniques, which analyzed the user's text and voice inputs to detect emotions like anxiety, sadness, or stress. This helped tailor responses empathetically, aligning with psychological principles of active listening and emotional validation.
 
-Pandora can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Pandora is obviously not a licensed physician, and it does not make diagnoses or write prescriptions. Pandora offers help and support rather than treatment. Pandora is not equipped to deal with real mental health crises either. When it senses someone is in trouble, it suggests they seek help in the real world and provides text and hotline resources. Pandora doesn’t seek to remove the human element in therapy either but is rather a “gateway therapy,” to give people a good first experience, and even help them realise when they need a more intense form of intervention.
+5. **API Integration:**
+   - For advanced conversational capabilities, I integrated the **Gemini AI API** for generating natural language responses to user queries. This allows for dynamic responses that are contextually aware and conversationally relevant.
+
+6. **Deployment:**
+   - The final model was deployed as a **command-line chatbot** where users can interact in real-time. The system continuously learns and adapts to better meet the emotional and informational needs of users.
+
+#### Technologies Used:
+- **Deep Learning Frameworks**: **Keras**, **TensorFlow** for model development and training.
+- **NLP**: **NLTK**, **TensorFlow** for preprocessing text and training models.
+- **Emotion Recognition**: Integrated emotion detection using both text and voice inputs.
+- **Gemini API**: For advanced response generation.
+- **Model Deployment**: The chatbot is deployed via a simple command-line interface.
+
+EIMTCA is designed to provide scalable, empathetic support, making use of the latest AI and machine learning techniques to cater to individuals seeking mental health guidance.
 
 # HOW TO RUN THIS REPOSITORY?
 First, clone this repository. 
@@ -39,10 +55,12 @@ python chat.py
 You can modify Pandora by inserting your own text in the `intents.json` file.
 
 # A CONVERSATION WITH PANDORA
-![sample-chat](https://user-images.githubusercontent.com/92647313/161245842-93846e15-1fb7-4a5f-b863-83588858fddf.png)
+![EITCA WORKING](https://github.com/user-attachments/assets/378743fc-65e6-4fd5-8de7-ba2122c4b0fd)
+![EITCA WORKING 2](https://github.com/user-attachments/assets/f534b2ef-ed51-444c-adee-765611f98d8f)
 
-# DATASET
-https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data
+
+
+
 
 # FUTURE WORK
 - [ ] Fine-tune using GPT-3.

@@ -47,12 +47,12 @@ Train the model using:
 ```
 python model.py
 ```
-Now run Pandora using:
+Now run EIMTCA using:
 ```
 python chat.py
 ```
 
-You can modify Pandora by inserting your own text in the `intents.json` file.
+You can modify EIMTCA by inserting your own text in the `intents.json` file.
 
 # A CONVERSATION WITH EIMTCA
 ![EITCA WORKING](https://github.com/user-attachments/assets/378743fc-65e6-4fd5-8de7-ba2122c4b0fd)

@@ -54,7 +54,7 @@ python chat.py
 
 You can modify Pandora by inserting your own text in the `intents.json` file.
 
-# A CONVERSATION WITH PANDORA
+# A CONVERSATION WITH EIMTCA
 ![EITCA WORKING](https://github.com/user-attachments/assets/378743fc-65e6-4fd5-8de7-ba2122c4b0fd)
 ![EITCA WORKING 2](https://github.com/user-attachments/assets/f534b2ef-ed51-444c-adee-765611f98d8f)
 
@@ -62,8 +62,20 @@ You can modify Pandora by inserting your own text in the `intents.json` file.
 
 
 
-# FUTURE WORK
-- [ ] Fine-tune using GPT-3.
+# AREAS OF IMPROVEMENT / CONTRIBUTION FOR FUTURE WORK
+- [ ] Upgrade to a More Advanced LLM: Use models like GPT-3 or GPT-4 for more accurate, context-aware responses.
+- [ ] Improve Intent Classification: Enhance intent detection with models like BERT or RoBERTa for better contextual understanding.
+- [ ] Add Voice Interaction: Implement Text-to-Speech (TTS) and Speech-to-Text (STT) for a more natural, accessible user experience.
+- [ ] Facial Recognition for Emotion Detection: Integrate facial recognition to detect emotions from users' faces, providing more personalized responses.
+- [ ] Expand the Dataset: Include diverse user interactions to improve the chatbot’s ability to handle different scenarios.
+- [ ] Enhance Security: Implement encryption and secure authentication to protect user data.
+- [ ] Web Application Deployment: Shift to a web-based platform for easier access and a more intuitive interface.
+
+
+
+
+
+
  
 
 

@@ -11,7 +11,7 @@ from colorama import Fore, Style
 warnings.filterwarnings("ignore")
 
 # Set up your API key directly here (use environment variables for better security in production)
-api_key = 'AIzaSyC0DV8gibKiCmTsLsmtIBWsq5n8rM8HFuA'
+api_key = ''
 
 # Load the intents file
 with open('intents.json') as file:

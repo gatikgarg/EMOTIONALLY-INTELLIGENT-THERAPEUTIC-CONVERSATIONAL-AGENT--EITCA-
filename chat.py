@@ -60,7 +60,7 @@ def chat():
 
         # Check for specific question "Who made you?"
         if inp.lower() == "who made you":
-            print(Fore.GREEN + 'EIMTCA:' + Style.RESET_ALL, "I was developed by a joint effort of Gatik and Rishit.")
+            print(Fore.GREEN + 'EIMTCA:' + Style.RESET_ALL, "I was developed by Gatik.")
             continue  # Skip to the next iteration, no need to call Gemini or model prediction
 
         # Predict tag using the trained model
